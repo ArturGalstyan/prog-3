@@ -6,22 +6,8 @@ var EatArr = [];
 var MulArr = [];
 var side = 20;
 
-class Grass {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.energy = 8;
-        this.directions = [
-            [this.x - 1, this.y - 1],
-            [this.x, this.y - 1],
-            [this.x + 1, this.y - 1],
-            [this.x - 1, this.y],
-            [this.x + 1, this.y],
-            [this.x - 1, this.y + 1],
-            [this.x, this.y + 1],
-            [this.x + 1, this.y + 1]
-        ];
-    }
+ class Grass extends LivingCreature {
+    
     chooseCell(char) {
         let result = [];
 

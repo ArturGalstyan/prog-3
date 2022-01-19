@@ -5,17 +5,8 @@ var EaterArr = [];
 var EatArr = [];
 var MulArr = [];
 var side = 20;
-class Eat {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.energy = 20;
-        this.directions = [
-            [this.x+1, this.y-1],
-            [this.x-1, this.y+1],
-            
-        ];
-    }
+class Eat extends LivingCreature{
+    
     getNewCordinates(){
         this.directions = [
             [this.x+1, this.y-1],

@@ -5,22 +5,8 @@ var EaterArr = [];
 var EatArr = [];
 var MulArr = [];
 var side = 20;
-class GrassEater {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.energy = 20;
-        this.directions = [
-            [this.x - 1, this.y - 1],
-            [this.x, this.y - 1],
-            [this.x + 1, this.y - 1],
-            [this.x - 1, this.y],
-            [this.x + 1, this.y],
-            [this.x - 1, this.y + 1],
-            [this.x, this.y + 1],
-            [this.x + 1, this.y + 1]
-        ];
-    }
+class GrassEater extends LivingCreature{
+    
     getNewCordinates(){
               this.directions = [
             [this.x - 1, this.y - 1],
